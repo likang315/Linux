@@ -36,6 +36,7 @@
    账户的切换：su - 账户名
    tty：终端
  
+
 6：命令格式
  1>:格式：命令关键字+空格+参数+目标
  2>:例：ls -l /etc
@@ -147,7 +148,7 @@
 		    echo $SHELL
 		注意：echo输出转向为文件
 		例：echo "hellow" > test.txt  （覆盖）
-	    	echo "world"  >> test.txt （追加）
+	    	    echo "world"  >> test.txt （追加）
 	
 
 

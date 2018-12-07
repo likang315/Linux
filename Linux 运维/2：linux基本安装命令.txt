@@ -2,12 +2,12 @@
 Linux ：是基于Unix的开源免费的操作系统，有与系统的稳定性和安全性几乎成为程序的代码运行的最佳系统环境
 	
 	分类：
-		1：图形化界面版：类似于windows
-		2：服务器版：是以控制台窗口中输入命令的操作系统
+		1：图形化界面版
+		2：服务器版：命令行界面
 
 	根据原生程度
 		1：内核版本：linus领导的内核小组开发，维护的
-		2：发行版本：被其他公司二次开发从星发行，ubuntu，CentOS，redhat
+		2：发行版本：被其他公司二次开发从新发行，ubuntu，CentOS，redhat
 
 	
 	
@@ -18,6 +18,7 @@ Linux ：是基于Unix的开源免费的操作系统，有与系统的稳定性和安全性几乎成为程序的代
 2：登录
 	root，权限大，密码不回显
 	shutdown now   关机
+	halt	关机	
 
 	reboot  重启
 
@@ -27,13 +28,14 @@ Linux ：是基于Unix的开源免费的操作系统，有与系统的稳定性和安全性几乎成为程序的代
 3：init 3 切换到命令行，重新登录
    init 5 切换到GUI登录界面
 
-4：Ctrl+L ，clear 清屏
+4：Ctrl+L 清屏
    exit :退出命令行系统
 
 5：ping ip地址  检查网络是否联通
    ping 域名   
 
 6：ip addr 查看网卡
+
 
 7：网卡配置
 
@@ -47,7 +49,7 @@ Linux ：是基于Unix的开源免费的操作系统，有与系统的稳定性和安全性几乎成为程序的代
 	白色的：表示普通文件
 	绿色的：表示可执行文件
 
-   查看网卡名称
+   查看网卡名称，进入编辑器
    vi ifcfg-ens33
    
    进入编辑器模式
@@ -63,7 +65,7 @@ Linux ：是基于Unix的开源免费的操作系统，有与系统的稳定性和安全性几乎成为程序的代
 网易开元镜像网站：http://mirrors.163.com
 http://mirrors.163.com/.help/CentOS7-Base-163.repo   yum源链接
 
-红帽系列中，进行软件安装的方法
+红帽(redHat)系列中，进行软件安装的方法
 	
       	cd /etc/yum.repos.d   打开yum源配置文件路径
 
@@ -71,9 +73,9 @@ http://mirrors.163.com/.help/CentOS7-Base-163.repo   yum源链接
 
 	rm -rf yum.repos.d    删除 -强制删除  文件名
 	
-	mkdir yum.repos.d    创建  文件名
+	mkdir yum.repos.d     创建  文件名
 
-	cd /etc/yum.repos.d    进入该目录
+	cd /etc/yum.repos.d   进入该目录
 
 	wget http://mirrors.163.com/.help/CentOS7-Base-163.repo   替换yum源
 
@@ -88,6 +90,8 @@ http://mirrors.163.com/.help/CentOS7-Base-163.repo   yum源链接
 	yum update kernel    更新内核
 
 	yum update          更新所有外包
+
+
 
 9：	root密码修改
 
@@ -112,7 +116,7 @@ http://mirrors.163.com/.help/CentOS7-Base-163.repo   yum源链接
 	10: 输入：reboot 重启
 
 
-10：   远程登录（putty）
+10：   远程登录（putty或者XShell）
 
 	Centos中输入：ip addr  在本机网卡ens33中记录本机IP地址
 	Windows中双击打开putty，在 Host name（IP addrs）下输入centos中的IP地
@@ -132,8 +136,6 @@ http://mirrors.163.com/.help/CentOS7-Base-163.repo   yum源链接
 		ctrl+A：将光标移动到行首
 		ctrl+E：光标移动到最后面
 	
-
-
 
 
 
