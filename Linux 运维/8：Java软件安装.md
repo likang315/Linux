@@ -1,56 +1,15 @@
-### 1£ºrpm ÃüÁî(Red-Hat Package Manage rpmÈí¼þ°ü¹ÜÀíÆ÷)
+### 1ï¼šrpm å‘½ä»¤(Red-Hat Package Manage rpmè½¯ä»¶åŒ…ç®¡ç†å™¨)
 
-?	a:¸ñÊ½	rpm ²ÎÊý Èí¼þ
-	b:²ÎÊý
-		1: -v£ºÏÔÊ¾ÃüÁîÖ´ÐÐ¹ý³Ì
-		2: -h »ò -hash £ºÌ×¼þ°²×°Ê±ÁÐ³ö±ê¼Ç£¬Ì×¼þÈí¼þÊÇÖ¸¶à¸öÈí¼þÕûºÏµ½Ò»¸ö°üÀï°²×°
-		3: -q£ºÊ¹ÓÃÑ¯ÎÊÄ£Ê½
-		4: -a£º²éÑ¯ËùÓÐÌ×¼þ
-		5: -i Ì×¼þµµ »ò-install Ì×½¨µµ £º°²×°Ö¸¶¨µÄÌ×½¨µµ
-		6: -U Ì×½¨µµ »ò-update Ì×½¨µµ £º¸üÐÂÖ¸¶¨µÄÌ×½¨µµ
-		7: -e Ì×½¨µµ »ò-erase Ì×½¨µµ  £ºÉ¾³ý(²Á³ý)Ö¸¶¨µÄÌ×½¨µµ
-		8: --nodeps£º²»ÑéÖ¤Ì×¼þµµµÄÏà»¥¹ØÁªÐÔ 
+?	a:æ ¼å¼	rpm å‚æ•° è½¯ä»¶ b:å‚æ•° 1: -vï¼šæ˜¾ç¤ºå‘½ä»¤æ‰§è¡Œè¿‡ç¨‹ 2: -h æˆ– -hash ï¼šå¥—ä»¶å®‰è£…æ—¶åˆ—å‡ºæ ‡è®°ï¼Œå¥—ä»¶è½¯ä»¶æ˜¯æŒ‡å¤šä¸ªè½¯ä»¶æ•´åˆåˆ°ä¸€ä¸ªåŒ…é‡Œå®‰è£… 3: -qï¼šä½¿ç”¨è¯¢é—®æ¨¡å¼ 4: -aï¼šæŸ¥è¯¢æ‰€æœ‰å¥—ä»¶ 5: -i å¥—ä»¶æ¡£ æˆ–-install å¥—å»ºæ¡£ ï¼šå®‰è£…æŒ‡å®šçš„å¥—å»ºæ¡£ 6: -U å¥—å»ºæ¡£ æˆ–-update å¥—å»ºæ¡£ ï¼šæ›´æ–°æŒ‡å®šçš„å¥—å»ºæ¡£ 7: -e å¥—å»ºæ¡£ æˆ–-erase å¥—å»ºæ¡£ ï¼šåˆ é™¤(æ“¦é™¤)æŒ‡å®šçš„å¥—å»ºæ¡£ 8: --nodepsï¼šä¸éªŒè¯å¥—ä»¶æ¡£çš„ç›¸äº’å…³è”æ€§
 
-c:³£ÓÃÃüÁî
-	°²×°£ºrpm -ivh rpmÎÄ¼þ
-	¸üÐÂ£ºrpm -Uvh rpmÎÄ¼þ
-	É¾³ý£ºrpm -e --nodeps Èí¼þÃû
-	²é¿´£ºrpm -qa
+c:å¸¸ç”¨å‘½ä»¤ å®‰è£…ï¼šrpm -ivh rpmæ–‡ä»¶ æ›´æ–°ï¼šrpm -Uvh rpmæ–‡ä»¶ åˆ é™¤ï¼šrpm -e --nodeps è½¯ä»¶å æŸ¥çœ‹ï¼šrpm -qa
 
-###### 1£º°²×°JDK£¬²Î¿¼ppt
+###### 1ï¼šå®‰è£…JDKï¼Œå‚è€ƒppt
 
-###### 2£º°²×°Tomcat
+###### 2ï¼šå®‰è£…Tomcat
 
-###### 3£º°²×°mysql
+###### 3ï¼šå®‰è£…mysql
 
+<details class="details-reset details-overlay details-overlay-dark" style="box-sizing: border-box; display: block;"><summary data-hotkey="l" aria-label="Jump to line" aria-haspopup="dialog" style="box-sizing: border-box; display: list-item; cursor: pointer; list-style: none;"></summary></details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 

@@ -1,150 +1,118 @@
-### Linux £ºÊÇ»ùÓÚUnixµÄ¿ªÔ´Ãâ·ÑµÄ²Ù×÷ÏµÍ³£¬ÓÐÓëÏµÍ³µÄÎÈ¶¨ÐÔºÍ°²È«ÐÔ¼¸ºõ³ÉÎª³ÌÐòµÄ´úÂëÔËÐÐµÄ×î¼ÑÏµÍ³»·¾³
+### Linux ï¼š
 
-###### ·ÖÀà£º
+â€‹	æ˜¯åŸºäºŽUnixçš„å¼€æºå…è´¹çš„æ“ä½œç³»ç»Ÿï¼Œç³»ç»Ÿçš„ç¨³å®šæ€§å’Œå®‰å…¨æ€§å‡ ä¹Žæˆä¸ºç¨‹åºçš„ä»£ç è¿è¡Œçš„æœ€ä½³ç³»ç»ŸçŽ¯å¢ƒ
 
-1£ºÍ¼ÐÎ»¯½çÃæ°æ
-2£º·þÎñÆ÷°æ£ºÃüÁîÐÐ½çÃæ
+------
 
-###### ¸ù¾ÝÔ­Éú³Ì¶È
+###### åˆ†ç±»ï¼š
 
-1£ºÄÚºË°æ±¾£ºlinusÁìµ¼µÄÄÚºËÐ¡×é¿ª·¢£¬Î¬»¤µÄ
-2£º·¢ÐÐ°æ±¾£º±»ÆäËû¹«Ë¾¶þ´Î¿ª·¢´ÓÐÂ·¢ÐÐ£¬ubuntu£¬CentOS£¬redhat
+1. å›¾å½¢åŒ–ç•Œé¢ç‰ˆ
+2. æœåŠ¡å™¨ç‰ˆï¼ˆå‘½ä»¤è¡Œç•Œé¢ï¼‰
 
-### 1£ºÃüÁîÐÐ
+###### æ ¹æ®åŽŸç”Ÿç¨‹åº¦ï¼š
 
-  Ctrl+alt+F2  : ´ò¿ªÃüÁîÐÐ
-  Ctrl+alt+F1  : ¹Ø±ÕÃüÁîÐÐ
+1. å†…æ ¸ç‰ˆæœ¬ï¼šlinus é¢†å¯¼çš„å†…æ ¸å°ç»„å¼€å‘ï¼Œç»´æŠ¤çš„
+2. å‘è¡Œç‰ˆæœ¬ï¼šè¢«å…¶ä»–å…¬å¸äºŒæ¬¡å¼€å‘ä»Žæ–°å‘è¡Œï¼Œubuntuï¼ŒCentOSï¼Œredhat
 
-### 2£ºµÇÂ¼
+##### 1ï¼šæ‰“å¼€ã€å…³é—­å‘½ä»¤è¡Œ
 
-root£¬È¨ÏÞ´ó£¬ÃÜÂë²»»ØÏÔ
-shutdown now   ¹Ø»ú	
+- Ctrl+alt+F2 : æ‰“å¼€å‘½ä»¤è¡Œ
+- Ctrl+alt+F1 : å…³é—­å‘½ä»¤è¡Œ
 
-reboot  ÖØÆô
+##### 2ï¼šç™»å½•
 
-ctrl+l   ÇåÆÁ
+- root æƒé™å¤§ï¼Œå¯†ç ä¸å›žæ˜¾ 
+- su rootï¼šåˆ‡æ¢åˆ°rootæƒé™
+- shutdown now å…³æœº
+- reboot é‡å¯
+- ctrl+l æ¸…å±
+- exit ï¼šé€€å‡º
 
-### 3£ºinit 3 ÇÐ»»µ½ÃüÁîÐÐ£¬ÖØÐÂµÇÂ¼
+##### 3ï¼šå‘½ä»¤è¡Œä¸ŽGUIäº’ç›¸åˆ‡æ¢
 
-?      init 5 ÇÐ»»µ½GUIµÇÂ¼½çÃæ
+- init 3 ï¼šåˆ‡æ¢åˆ°å‘½ä»¤è¡Œï¼Œé‡æ–°ç™»å½•
+- init 5 ï¼šåˆ‡æ¢åˆ°GUIç™»å½•ç•Œé¢
 
-### 4£ºCtrl+L ÇåÆÁ
+##### 4ï¼šæ£€æŸ¥ç½‘ç»œæ˜¯å¦è”é€š
 
-?     exit :ÍË³öÃüÁîÐÐÏµÍ³
+- ping åŸŸå ï¼šæ£€æŸ¥å±€åŸŸç½‘æ˜¯å¦è”é€š
 
-### 5£ºping ipµØÖ·  ¼ì²éÍøÂçÊÇ·ñÁªÍ¨
 
-?      ping ÓòÃû   
+##### 6ï¼šæŸ¥çœ‹ç½‘å¡
 
-### 6£ºip addr ²é¿´Íø¿¨
+- Ifconfig :eth0 æœ¬çº§ç½‘å¡
 
-### 7£ºÍø¿¨ÅäÖÃ
+##### 7ï¼šç½‘å¡é…ç½®
 
-   cd /   ´ò¿ª....
+cd / æ‰“å¼€....
 
-   ÆôÓÃÍø¿¨£º
-   cd /etc/sysconfig/network-scripts   
-   ls  : ²é¿´µ±Ç°ÎÄ¼þ¼Ð
-	À¶É«µÄ£º±íÊ¾Ä¿Â¼
-        ºìÉ«µÄ£º±íÊ¾Ñ¹ËõÎÄ¼þ
-	°×É«µÄ£º±íÊ¾ÆÕÍ¨ÎÄ¼þ
-	ÂÌÉ«µÄ£º±íÊ¾¿ÉÖ´ÐÐÎÄ¼þ
+å¯ç”¨ç½‘å¡ï¼š cd /etc/sysconfig/network-scripts
+ls : æŸ¥çœ‹å½“å‰æ–‡ä»¶å¤¹ è“è‰²çš„ï¼šè¡¨ç¤ºç›®å½• çº¢è‰²çš„ï¼šè¡¨ç¤ºåŽ‹ç¼©æ–‡ä»¶ ç™½è‰²çš„ï¼šè¡¨ç¤ºæ™®é€šæ–‡ä»¶ ç»¿è‰²çš„ï¼šè¡¨ç¤ºå¯æ‰§è¡Œæ–‡ä»¶
 
-   ²é¿´Íø¿¨Ãû³Æ£¬½øÈë±à¼­Æ÷
-   vi ifcfg-ens33
+æŸ¥çœ‹ç½‘å¡åç§°ï¼Œè¿›å…¥ç¼–è¾‘å™¨ vi ifcfg-ens33
 
-   ½øÈë±à¼­Æ÷Ä£Ê½
-   ½«ONBOOT=NOÐÞ¸ÄÎªyes£¨¼üÅÌi¼ü£¬ÓÉä¯ÀÀÄ£Ê½µ½±àÒëÆ÷Ä£Ê½£©
+è¿›å…¥ç¼–è¾‘å™¨æ¨¡å¼ å°†ONBOOT=NOä¿®æ”¹ä¸ºyesï¼ˆé”®ç›˜ié”®ï¼Œç”±æµè§ˆæ¨¡å¼åˆ°ç¼–è¯‘å™¨æ¨¡å¼ï¼‰
 
-   ÊäÈë:wq ºó»Ø³µ(±£´æÍË³ö±à¼­Æ÷)
-   service network restart   :ÖØÆôÍøÂç·þÎñ
-   ping ÓòÃû    ---------¼ì²éÍøÂçÊÇ·ñÆ´Í¨
+è¾“å…¥:wq åŽå›žè½¦(ä¿å­˜é€€å‡ºç¼–è¾‘å™¨) service network restart :é‡å¯ç½‘ç»œæœåŠ¡ ping åŸŸå ---------æ£€æŸ¥ç½‘ç»œæ˜¯å¦æ‹¼é€š
 
-### 8£ºyumÔ´Ìæ»»£¨LinuxÏµÍ³°²×°Èí¼þÂ·¾¶£©-------ÒÀÀµ¹ØÏµ
+### 8ï¼šyumæºæ›¿æ¢ï¼ˆLinuxç³»ç»Ÿå®‰è£…è½¯ä»¶è·¯å¾„ï¼‰-------ä¾èµ–å…³ç³»
 
-ÍøÒ×¿ªÔª¾µÏñÍøÕ¾£ºhttp://mirrors.163.com
-http://mirrors.163.com/.help/CentOS7-Base-163.repo   yumÔ´Á´½Ó
+ç½‘æ˜“å¼€å…ƒé•œåƒç½‘ç«™ï¼š[http://mirrors.163.com](http://mirrors.163.com/) <http://mirrors.163.com/.help/CentOS7-Base-163.repo> yumæºé“¾æŽ¥
 
-ºìÃ±(redHat)ÏµÁÐÖÐ£¬½øÐÐÈí¼þ°²×°µÄ·½·¨
-	
+çº¢å¸½(redHat)ç³»åˆ—ä¸­ï¼Œè¿›è¡Œè½¯ä»¶å®‰è£…çš„æ–¹æ³•
 
-cd /etc/yum.repos.d   ´ò¿ªyumÔ´ÅäÖÃÎÄ¼þÂ·¾¶
+cd /etc/yum.repos.d æ‰“å¼€yumæºé…ç½®æ–‡ä»¶è·¯å¾„
 
-cd ..  ·µ»ØÉÏÒ»²ã
+cd .. è¿”å›žä¸Šä¸€å±‚
 
-rm -rf yum.repos.d    É¾³ý -Ç¿ÖÆÉ¾³ý  ÎÄ¼þÃû
+rm -rf yum.repos.d åˆ é™¤ -å¼ºåˆ¶åˆ é™¤ æ–‡ä»¶å
 
-mkdir yum.repos.d     ´´½¨  ÎÄ¼þÃû
+mkdir yum.repos.d åˆ›å»º æ–‡ä»¶å
 
-cd /etc/yum.repos.d   ½øÈë¸ÃÄ¿Â¼
+cd /etc/yum.repos.d è¿›å…¥è¯¥ç›®å½•
 
-wget http://mirrors.163.com/.help/CentOS7-Base-163.repo   Ìæ»»yumÔ´
+wget <http://mirrors.163.com/.help/CentOS7-Base-163.repo> æ›¿æ¢yumæº
 
-http://mirrors.aliyun.com/repo/Centos-7.repo           °¢Àï¿ªÔ´¾µÏñ
+<http://mirrors.aliyun.com/repo/Centos-7.repo> é˜¿é‡Œå¼€æºé•œåƒ
 
-yum clean all      Çå³ýyumÔ´»º´æ
+yum clean all æ¸…é™¤yumæºç¼“å­˜
 
-yum makecache        »º´æ¸üÐÂ
+yum makecache ç¼“å­˜æ›´æ–°
 
-yum repolist  all    ä¯ÀÀyumÔ´ÅäÖÃÎÄ¼þÊÇ·ñÆôÓÃ
+yum repolist all æµè§ˆyumæºé…ç½®æ–‡ä»¶æ˜¯å¦å¯ç”¨
 
-yum update kernel    ¸üÐÂÄÚºË
+yum update kernel æ›´æ–°å†…æ ¸
 
-yum update          ¸üÐÂËùÓÐÍâ°ü
+yum update æ›´æ–°æ‰€æœ‰å¤–åŒ…
 
+### 9ï¼š	rootå¯†ç ä¿®æ”¹
 
+1ï¼šé‡å¯ç³»ç»Ÿ reboot
 
-### 9£º	rootÃÜÂëÐÞ¸Ä
+2ï¼šå¯åŠ¨ç•Œé¢ç‚¹å‡»ä¸Šä¸‹é”®ï¼Œå†ç‚¹å‡»é”®ç›˜Eé”®
 
-1£ºÖØÆôÏµÍ³ reboot
+3ï¼šè¿›å…¥ç´§æ€¥æ•‘æ´æ¨¡å¼ï¼ˆå•äººæ¨¡å¼ï¼‰
 
-2£ºÆô¶¯½çÃæµã»÷ÉÏÏÂ¼ü£¬ÔÙµã»÷¼üÅÌE¼ü
+4ï¼šå®šä½Linux16 æ‰€åœ¨è¡Œï¼Œæ‰¾åˆ° ro åˆ é™¤åŽåŽŸä½ç½®æ·»åŠ  rw init=/sysroot/bin/bash ä¹‹åŽç‚¹å‡»é”®ç›˜ Ctrl+x
 
-3£º½øÈë½ô¼±¾ÈÔ®Ä£Ê½£¨µ¥ÈËÄ£Ê½£©
+5ï¼šè¾“å…¥ chroot /sysroot
 
-4£º¶¨Î»Linux16 ËùÔÚÐÐ£¬ÕÒµ½ ro É¾³ýºóÔ­Î»ÖÃÌí¼Ó rw init=/sysroot/bin/bash Ö®ºóµã»÷¼üÅÌ  Ctrl+x
+6: è¾“å…¥ passwd
 
-5£ºÊäÈë chroot /sysroot
+7: è¾“å…¥ä¸¤æ¬¡å¯†ç ï¼Œä¸å›žæ˜¾
 
-6: ÊäÈë passwd
+8ï¼šä½¿æ–°å¯†ç èµ·æ•ˆï¼š touch /.autorelabel
 
-7: ÊäÈëÁ½´ÎÃÜÂë£¬²»»ØÏÔ
+9: ç‚¹å‡»é”®ç›˜Ctrl+d
 
-8£ºÊ¹ÐÂÃÜÂëÆðÐ§£º touch /.autorelabel
+10: è¾“å…¥ï¼šreboot é‡å¯
 
-9: µã»÷¼üÅÌCtrl+d
+### 10ï¼š è¿œç¨‹ç™»å½•ï¼ˆputtyæˆ–è€…XShellï¼‰ï¼Œç«¯å£å·ï¼š`23`
 
-10: ÊäÈë£ºreboot ÖØÆô
+Centosä¸­è¾“å…¥ï¼šip addr åœ¨æœ¬æœºç½‘å¡ens33ä¸­è®°å½•æœ¬æœºIPåœ°å€ Windowsä¸­åŒå‡»æ‰“å¼€puttyï¼Œåœ¨ Host nameï¼ˆIP addrsï¼‰ä¸‹è¾“å…¥centosä¸­çš„IPåœ° åœ¨puttyä¸­çš„Saved sessions ä¸­å‘½åï¼Œç‚¹å‡»å³ä¾§saveä¿å­˜å€ï¼Œç«¯å£ä¸º22ä¸å˜ ç‚¹å‡»puttyä¸‹ä¾§çš„openï¼Œè¿›è¡Œè¿œç¨‹ç™»å½• è¾“å…¥root åŠå¯†ç åŽå®Œæ¯•
 
-### 10£º   Ô¶³ÌµÇÂ¼£¨putty»òÕßXShell£©£¬¶Ë¿ÚºÅ£º`23`
+### å¿«æ·é”®
 
-CentosÖÐÊäÈë£ºip addr  ÔÚ±¾»úÍø¿¨ens33ÖÐ¼ÇÂ¼±¾»úIPµØÖ·
-WindowsÖÐË«»÷´ò¿ªputty£¬ÔÚ Host name£¨IP addrs£©ÏÂÊäÈëcentosÖÐµÄIPµØ
-ÔÚputtyÖÐµÄSaved sessions ÖÐÃüÃû£¬µã»÷ÓÒ²àsave±£´æÖ·£¬¶Ë¿ÚÎª22²»±ä
-µã»÷puttyÏÂ²àµÄopen£¬½øÐÐÔ¶³ÌµÇÂ¼	
-ÊäÈëroot ¼°ÃÜÂëºóÍê±Ï
+tabï¼šè¡¥å…¨å‘½ä»¤ ctrl+Cï¼šç»ˆæ­¢å½“å‰å‘½ä»¤ ctrl+Dï¼šé€€å‡ºå½“å‰ç»ˆç«¯ ctrl+Lï¼šæ¸…å± ctrl+Zï¼šç»ˆæ­¢è¿›ç¨‹
 
-
-
-### ¿ì½Ý¼ü
-
-tab£º²¹È«ÃüÁî
-ctrl+C£ºÖÕÖ¹µ±Ç°ÃüÁî
-ctrl+D£ºÍË³öµ±Ç°ÖÕ¶Ë
-ctrl+L£ºÇåÆÁ
-ctrl+Z£ºÖÕÖ¹½ø³Ì
-
-ctrl+A£º½«¹â±êÒÆ¶¯µ½ÐÐÊ×
-ctrl+E£º¹â±êÒÆ¶¯µ½×îºóÃæ
-
-
-
-
-
-
-
-
-
-
-
-
+ctrl+Aï¼šå°†å…‰æ ‡ç§»åŠ¨åˆ°è¡Œé¦– ctrl+Eï¼šå…‰æ ‡ç§»åŠ¨åˆ°æœ€åŽé¢
