@@ -66,8 +66,43 @@
    - free
    - last
    - history
+   - curl
+   - wget
+   
+6. ##### 网络常用命令
+
+   - ping
+   - host
+   - nc
+   - telnet
    - netstat
    - lsof
+   - tcpdump
+   - scp
 
-6. ##### vim，vi 编辑器
+7. ##### Shell 脚本编程
+
+   - Shelll环境
+   - 运行 Shell 脚本有两种方法
+   - 定义变量
+   - Shell 字符串
+   - Shell 数组
+   - Shell 注释
+   - Shell 传递参数
+   - Shell 运算符
+   - Shell 流程控制
+   - Shell 函数
+   - Shell 输入/输出重定向
+   - Shell 文件包含
+
+8. ##### Vim
+
+   - 三种模式
+   - 模式切换
+
+9. ##### Linux 安装软件
+
+   - 安装JDK
+   - 安装Tomcat
+   - 安装MySQL
 
