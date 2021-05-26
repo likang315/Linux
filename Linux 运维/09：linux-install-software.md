@@ -2,7 +2,9 @@
 
 ------
 
-##### 1：rpm (Red-Hat Package Manage rpm软件包管理器)
+[TOC]
+
+##### 01：rpm (Red-Hat Package Manage rpm软件包管理器)
 
 - 格式：rpm 参数 软件
 - 参数
@@ -20,8 +22,8 @@
   - 删除：rpm -e --nodeps 软件名 
   - 查看：rpm -qa
 
-##### 2：安装JDK
+##### 02：安装JDK
 
-##### 3：安装Tomcat
+##### 03：安装Tomcat
 
-##### 4：安装MySQL
+##### 04：安装MySQL

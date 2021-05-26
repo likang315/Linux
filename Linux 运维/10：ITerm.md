@@ -2,6 +2,8 @@
 
 ------
 
+[TOC]
+
 ##### 01：使用快捷键键入文本
 
 - preferences -> keys -> + -> 键入指定键 -> action 选择send text -> 回车
