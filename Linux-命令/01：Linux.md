@@ -58,3 +58,15 @@
       - 命令行登录
       - 远程登录 pts/0 
    6. 登录后加载环境变量
+
+##### 04：包管理工具
+
+- Linux 系统基本上分两大类：
+
+  - RedHat系列：Redhat、Centos、Fedora等
+    - 使用yum管理包依赖，软件包格式为 rpm 包；
+  - Debian系列：Debian、Ubuntu等
+    - 包管理工具 apt-get 
+  - HomeBrew 是Mac os 包管理工具
+
+  
