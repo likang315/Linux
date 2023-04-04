@@ -9,7 +9,8 @@ Shell 是指一种应用程序，这个应用程序提供了一个界面，用�
 - Bourne Shell（/usr/bin/sh或/bin/sh）
 - Bourne Again Shell（/bin/bash）
 - 在一般情况下，人们并不区分 Bourne Shell 和 Bourne Again Shell，所以，像 **#!/bin/sh**，它同样也可以改为 **#!/bin/bash**。
-  - **#!** 告诉系统其后路径所指定的程序即是解释此脚本文件的 Shell 程序
+  - **#!** 告诉系统其后路径所指定的程序即是使用那种解释器解释该脚本文件。
+  - bash：**命令行解释器**；
 
 ##### 2：运行 Shell 脚本有两种方法：
 
