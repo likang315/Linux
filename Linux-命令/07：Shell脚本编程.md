@@ -4,17 +4,20 @@
 
 [TOC]
 
-##### 01：Shell
 
-- Shell 是一种**命令行解释器**，它是**用户与操作系统内核进行交互的界面**。通过shell，用户可以输入命令并与计算机进行通信，执行文件操作、运行程序等。
-- 常见的 Shell：bash、zsh、ksh；
 
-###### shell 脚本
+##### 00：概述
 
-- `.sh`文件：表示 Shell 脚本文件的文件扩展名；
-- 一种文本文件，其中包含一系列用于在Unix或类Unix操作系统上执行的命令。**按顺序执行**，就像用户手动输入它们一样；
+- Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务
 
-##### 02：运行 Shell 脚本有两种方式
+##### 01：Shelll环境
+
+- Bourne Shell（/usr/bin/sh或/bin/sh）
+- Bourne Again Shell（/bin/bash）
+- 在一般情况下，人们并不区分 Bourne Shell 和 Bourne Again Shell，所以，像 **#!/bin/sh**，它同样也可以改为 **#!/bin/bash**。
+  - **#!** 告诉系统其后路径所指定的程序即是解释此脚本文件的 Shell 程序
+
+##### 02：运行 Shell 脚本有两种方法：
 
 1. 作为可执行程序
 
@@ -33,12 +36,11 @@
 
 2. 作为解释器参数
 
-- 直接运行解释器，其参数就是 shell 脚本的文件名，如
+- 这种运行方式是，直接运行解释器，其参数就是 shell 脚本的文件名，如：
 
-- ```shell
-  # 使用 bash 执行
-  /bin/sh test.sh
-  ```
+```shell
+/bin/sh test.sh
+```
 
 ##### 03：定义变量
 
@@ -91,7 +93,7 @@
 
 ##### 04：Shell 字符串
 
-- 字符串**可以用单引号，也可以用双引号，也可以不用引号；**
+- 字符串可以用单引号，也可以用双引号，也可以不用引号；
 
 - 单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的；
 
@@ -134,9 +136,9 @@
 
 - ###### 定义数组
 
-  - 在 Shell 中，用括号来表示数组，数组元素用"空格"符号分割开。
+  - 在 Shell 中，用括号来表示数组，数组元素用"空格"符号分割开。定义数组的一般形式为：
 
-  - 定义数组的一般形式为：数组名=(值1 值2 ... 值n)
+  - 数组名=(值1 值2 ... 值n)
 
   - ```shell
     # 分别定义每个变量
@@ -263,26 +265,20 @@
    echo "文件不可执行"
   fi
   ```
-##### 09：Shell test 命令
+```
 
-- 用于**接受一些参数并执行条件测试**，根据条件测试的结果返回一个退出状态码（0表示真，1表示假 ）；
+##### 9：Shell test 命令
 
-    ```shell
-    if test num = num
-    then
-        echo '两个字符串相等!'
-    else
-        echo '两个字符串不相等!'
-    fi
-    ```
+- 用于检查某个条件是否成立，它可以进行数值、字符和文件三个方面的测试
 
-- 在Shell中，`[`是一个命令，它也被称**为`test`命令的一个别名；**
-
-- ```shell
-  if [ num -eq num ]; then
-  	echo '两个字符串相等!'
+  ```shell
+  if test num = num
+  then
+      echo '两个字符串相等!'
+  else
+      echo '两个字符串不相等!'
   fi
-  ```
+```
 
 ##### 10：Shell 流程控制
 
@@ -331,7 +327,7 @@
   
   for var in item1 item2 ... itemN; do command1; command2… done;
   
-  for loop in "${a[@]}";
+  for loop in ${a[@]};
   do
   	echo $loop
   done
@@ -413,7 +409,7 @@
       echo "输入第二个数字: "
       read anotherNum
       echo "两个数字分别为 $aNum 和 $anotherNum !"
-      return $(($aNum + $anotherNum))
+      return $(($aNum+$anotherNum))
   }
   # funWithReturn 参数1 参数二
   funWithReturn
@@ -421,7 +417,7 @@
   echo "输入的两个数字之和为 $? !"
   ```
 
-##### 12：输入/输出重定向
+##### 12：Shell 输入/输出重定向
 
 | 命令            | 说明                              |
 | :-------------- | :-------------------------------- |
@@ -438,23 +434,41 @@
   cat ss.txt > /dev/null
   ```
 
-##### 13：引用外部脚本
+##### 13：Shell 文件包含
 
-- 运行脚本文件
+- Shell 也可以包含外部脚本。这样可以很方便的封装一些公用的代码作为一个独立的文件
 
-  - 运行`. filename`或`source filename`时，它会**执行文件中的命令，而不需要在每次执行时重新启动一个新的 shell。**
+```shell
+. filename   # 注意点号(.)和文件名中间有一空格
+或
+source filename
+```
 
-  - ```shell
-    . filename   # 注意点号 . 和文件名中间有一空格，等价于 ./filename
-    source filename
+```shell
+# 使用 . 号来引用test1.sh 文件
+. ./test1.sh
+# 或者使用以下包含文件代码
+# source ./test1.sh
+echo "地址：$url"
+```
+
+##### 14：Shell 操作符
+
+- &：后台运行
+
+  - ```bash
+    python long_task.py &  # 后台运行 Python 脚本，终端可继续输入其他命令
     ```
 
-- Shell 也可以包含外部脚本。这样可以很方便的封装一些公用的代码作为一个独立的文件。
+- &&：逻辑与，前一条命令成功（返回 `0`）后，才执行下一条
 
-- ```shell
-  # 使用 . 号来引用test1.sh 文件
-  . ./test1.sh
-  # 或者使用以下包含文件代码
-  # source ./test1.sh
-  echo "地址：$url"
-  ```
+  - ```bash
+    source ~/.bashrc && python script.py  # 只有 .bashrc 加载成功，才会执行 script.py
+    ```
+
+
+
+
+
+
+
