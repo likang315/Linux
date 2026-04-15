@@ -64,7 +64,7 @@ $ docker run -d -p 80:80 --name webserver nginx
 
 ###### 容器的生命周期
 
-- <img src="/https://github.com/likang315/Linux/blob/master/Linux-%E8%BF%90%E7%BB%B4/photos/docker-lifetime.png" alt="docker-lifetime" style="zoom:30%;" />
+- <img src="https://github.com/likang315/Linux/blob/master/Linux-%E8%BF%90%E7%BB%B4/photos/docker-lifetime.png" alt="docker-lifetime" style="zoom:30%;" />
 
   ```shell
   ## 创建并启动容器（最常用）
